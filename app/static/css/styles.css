@@ -1,0 +1,28 @@
+
+/*
+|--------------------------------------------------------------------------
+| Styles
+|--------------------------------------------------------------------------
+*/
+
+.container{
+  width: 1140px;
+  margin: 0 auto;
+}
+
+.mdl-layout__header-row{
+    background-color: #5E7B8B;
+}
+
+.mdl-layout__header{
+    background-color: #5E7B8B;
+}
+
+.mdl-layout__header a{
+  color:#ffffff;
+  text-decoration: none;
+}
+
+form{
+  height:400px;
+}

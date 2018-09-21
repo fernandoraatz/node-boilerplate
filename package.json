@@ -1,0 +1,28 @@
+{
+  "name": "nodestarterkit",
+  "version": "1.0.0",
+  "description": "workflow básico de node",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+    "start": "PORT=3001 nodemon index",
+    "debug": "PORT=3001 nodemon --inspect --inspect=0.0.0.0:9229 index.js"
+  },
+  "keywords": [
+    "api",
+    "javascript"
+  ],
+  "author": "fernandoraatz",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "consign": "^0.1.2",
+    "ejs": "^2.5.7",
+    "express": "^4.14.0"
+  },
+  "devDependencies": {
+    "mocha": "^4.0.1",
+    "nodemon": "^1.17.3",
+    "supertest": "^3.0.0"
+  }
+}

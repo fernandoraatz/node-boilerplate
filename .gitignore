@@ -1,0 +1,9 @@
+node_modules/
+data/
+flask-project/
+env/
+*.pyc
+*~
+__pycache__
+db.sqlite3
+.DS_Store
