@@ -1,0 +1,21 @@
+{% extends '../base/layout.njk' %}
+
+{% block content %}
+
+<div class="page-title">
+    <h1>Add Image</h1>
+</div> 
+
+<section class="page-content">
+    <form id="form-image">
+        <div class="file-field input-field">
+            <div class="btn"> 
+              <span>File</span>
+              <input type="file" name="image">
+            </div>
+        </div>
+        <button class="btn-primary" type="submit">Enviar</button>
+    </form>
+</section>
+
+{% endblock %}

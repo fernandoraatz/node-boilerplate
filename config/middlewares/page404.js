@@ -5,7 +5,7 @@
 */
 
 var page404 = function(req, res, next){
-    res.status(404).render("public/404");
+    res.status(404).render("base/404");
 }
 
 module.exports = page404;

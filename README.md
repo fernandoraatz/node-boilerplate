@@ -1,72 +1,60 @@
 # Node
 
-Estrutura básica em Node.js
+API de um todolist em Node.js
 
-### Descrição
+---
+
+## Descrição
 
 - API em Node.js como servidor.  
 - Express como middleware.  
+- MongoDB como banco
 - Nodemon para observar alterações no servidor.  
 - Consign para gerenciar as pastas.  
 - Body Parser para pegar parâmetros enviados das requisicões.  
-- Utiliza EJS como Template View
+- Nunjucks como Template View
 - Debug configurado com VsCode
+- Testes com Mocha/Chai/Supertest
+- Docker com container da aplicação e do banco
 
-### Pré-Requisitos
+---
+
+## Pré-Requisitos
 
 Instalar o Node e seus módulos.  
 
-### Procedimentos
+## Procedimentos
 
 Instalar os módulos do package.json:
 
-```
+```css
 npm install
 ```
 
 Rodar o servidor usando o Nodemon:
 
-```
+```css
 npm start
-
 ```
 
 Fazendo um GET com curl para testar:
 
-```
-curl -i "http://localhost:3001"
+```css
+curl -H "Accept: application/json" http://localhost:8080/todos
 ```
 
 ---
 
-## Estrutura Básica
+## Instalar Módulos e Rodar com docker
 
-Estrutura básica de pastas e arquivos:
+Construir o projeto com docker:
 
-- **.vscode**
-  - *launch.json*
-- **app**
-  - **controllers**
-    - *views.js*
-  - **routes**
-    - *views.js*
-  - **static**
-    - *css*
-    - *fonts*
-    - *images*
-    - *js*
-  - **views**
-    - **admin**
-      - *register.ejs*
-    - **partials**
-      - *footer.ejs*
-      - *header.ejs*
-    - **public**
-      - *404.ejs*
-      - *index.ejs*
-- **config**
-  - *express.js*
-- *index.js*
-- *package.json*
+```css
+sudo docker-compose up --build
+```
 
----
+Rodar com docker:
+
+```css
+sudo docker-compose start
+```

@@ -4,18 +4,20 @@
 |--------------------------------------------------------------------------
 */
 
-// Express
+// Express | Http | MongoDB
 
-var app = require('./config/express');
+let app = require('./config/express');
+let http = require('http').Server(app);
+let database = require('./config/database');   
+ 
+// Running Database 
 
-// HTTP
-
-var http = require('http').Server(app);
+database.connect();
 
 // Running Server 
 
-var port = process.env.PORT; 
+http.listen(process.env.PORT || 3000, () => {
+    console.log(`Servidor Rodando na porta ${process.env.PORT}`)
+})
 
-http.listen(port, function(){
-    console.log(`Servidor Rodando na porta ${port}`);  
-});
+ 

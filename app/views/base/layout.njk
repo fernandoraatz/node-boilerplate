@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset='utf-8'>
+		<meta name='viewport' content='width=device-width, initial-scale=1'>
+		<link rel="icon" type="image/x-icon" href="/favicon.ico">
+		<title>Node - Server</title>
+		<link rel='stylesheet' href='/css/styles.css'>
+</head> 
+<body>
+ 
+	<!-- Header -->
+
+		<header>
+			<div class="container">
+					<a href="/"><span class="header-title">Node - Server</span></a>
+			</div>
+		</header>
+
+	<!-- Sidebar Menu -->
+
+	<aside class="sidebar">
+			<nav class="sidebar-navigation">
+			<ul>
+				<span class="title-menu">Todos</span>
+				<li><a  href="/todos">List Todos</a></li>
+				<li><a href="/todos/add">Add Todo</a></li>
+				<span class="title-menu">Images</span>
+				<li><a href="/images/upload">Add Image</a></li>
+				<li><a href="/images">List Images</a></li>
+			</ul>
+			</nav>
+	</aside> 
+
+	<div class="content content-sidebar">
+			<div class="container ">
+            {% block content %}
+            {% endblock %}
+        </div>
+    </div>
+<!--  Scripts -->
+
+<script type="text/javascript" src="/js/scripts.js"></script>
+<script type="text/javascript" src="/js/scripts-todo.js"></script>
+
+</body>
+</html>

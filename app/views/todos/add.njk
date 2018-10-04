@@ -1,0 +1,49 @@
+{% extends '../base/layout.njk' %}
+
+{% block content %}
+
+<div class="page-title">
+    <h1>Add Todo</h1>
+</div> 
+
+<section class="page-content" > 
+    <form id="add-todo" action="/todos" method="post">
+
+      <div class="form-row">
+          <label for="titulo">Título</label>
+          <input 
+            type="text"
+            id="title"
+            name="title" 
+            placeholder="Título"  
+            />
+      </div>
+
+      <div class="form-row">
+          <label for="description">Descrição</label>
+          <input 
+            type="text"
+            id="description"
+            name="description" 
+            placeholder="Descrição"  
+            />
+      </div>
+
+      <div class="form-row">
+          <label for="image">Imagem</label>
+          <input 
+            type="text"
+            id="image"
+            name="image" 
+            placeholder="Descrição"  
+            />
+      </div>
+
+      <input type="hidden" id="isChecked" name="isChecked" value="false" /> 
+      
+      <button class="btn-primary" type="submit">Enviar</button>
+  </form>
+
+</section>
+
+{% endblock %}

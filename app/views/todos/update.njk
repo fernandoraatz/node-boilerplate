@@ -1,0 +1,49 @@
+{% extends '../base/layout.njk' %}
+
+{% block content %}
+<div class="page-title">
+    <h1>Editar</h1>
+</div> 
+
+<section class="page-content">
+      <form id="form-update" data-id="{{ todo._id }}">
+
+      <div class="form-row">
+          <label for="titulo">Título</label>
+          <input 
+            type="text"
+            id="title"
+            name="title" 
+            placeholder="Título"  
+            value="{{ todo.title }}"
+            />
+      </div>
+
+      <div class="form-row">
+          <label for="brand">Descrição</label>
+          <input 
+            type="text" 
+            id="description" 
+            name="description" 
+            placeholder="Descrição" 
+            value="{{ todo.description }}" 
+          />
+      </div>
+
+      <div class="form-row">
+          <label for="brand">Imagem</label>
+          <input 
+            type="text" 
+            id="image" 
+            name="image" 
+            placeholder="Imagem" 
+            value="{{ todo.image }}" 
+          />
+      </div>
+
+      <button class="btn-primary" type="submit">Enviar</button>
+  </form>
+
+</section> 
+
+{% endblock %}
